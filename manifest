@@ -2,7 +2,7 @@
 # STREAM
 #Tues Jun 11 21:02:09 UTC 2019
 JVMLevel=
-LSID===urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00395
+LSID=urn\:lsid\:broad.mit.edu\:cancer\.software\.genepattern\.module\.analysis\:00395\:99999
 author=Ted Liefeld, UCSD School of Medicine.
 categories=SingleCell
 
@@ -213,3 +213,4 @@ taskDoc=doc.html
 taskType=ScRnaSeq
 userid=ted
 version=inital revision
+
