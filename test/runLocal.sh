@@ -1,0 +1,1 @@
+docker run  -v ${PWD}:$PWD -w $PWD/job_1 genepattern/stream_preprocess python /stream/preprocess_command_line.py -m $PWD/test/data/data_Nestorowa.tsv -l $PWD/test/data/cell_label.tsv -c $PWD/test/data/cell_label_color.tsv -o "./" -mnc 5 -mcg 7 -rmt TRUE -mpg 5 -mpc 7 -ec 1 

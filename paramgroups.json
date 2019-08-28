@@ -1,0 +1,16 @@
+[
+{"name": "Inputs and Outputs", 
+  "parameters": ["data.file", "cell.label.file", "cell.label.color.file",  "output.filename"]},
+
+{"name": "Cell Filtering", "hidden": false,
+  "parameters": ["min.percent.genes","min.count.genes"]},
+
+{"name": "Gene Filtering", "hidden": false,
+  "parameters": ["min.num.cells","min.percent.cells","min.count.cells", "expression.cutoff"]},
+
+{"name": "Other Preprocessing", "hidden": false, "parameters": ["expression.cutoff", "normalize","log.transform", "remove.mitochondrial.genes"]},
+
+
+]
+
+
