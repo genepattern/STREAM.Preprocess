@@ -1,0 +1,17 @@
+#
+# ant -f ${GPUNIT_HOME}/build.xml -Dgpunit.diffStripTrailingCR="--strip-trailing-cr" -Dgp.host="beta.genepattern.org" -Dgp.url="https://beta.genepattern.org" -Dgp.user="ted-dev" -Dgp.password="" -Dgpunit.testfolder=`pwd` gpunit
+#
+name: STREAM.Preprocess
+module: STREAM.Preprocess
+params: 
+    "data.file": "./data/data_Nestorowa.tsv" 
+    "cell.label.file": "./data/cell_label.tsv" 
+    "cell.label.color.file":  "./data/cell_label.tsv"
+    "output.filename": "test"
+    "min.num.cells": "5"
+    "expression.cutoff": "1"
+assertions:
+    jobStatus: success
+    files:
+        "test_stream_result.pkl":  !!null
+

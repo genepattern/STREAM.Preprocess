@@ -73,7 +73,7 @@ p4_name=output.filename
 p4_numValues=0..1
 p4_optional=on
 p4_prefix=
-p4_prefix_when_specified=-of
+p4_prefix_when_specified=-of   
 p4_type=java.lang.String
 p4_value=
 

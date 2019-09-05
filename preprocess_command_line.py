@@ -60,6 +60,8 @@ def main():
 
 
     args = parser.parse_args()
+
+    print(args)
     
     input_filename = args.input_filename
     cell_label_filename = args.cell_label_filename
@@ -115,6 +117,7 @@ def main():
     st.filter_cells(adata,min_pct_genes=min_percent_genes,min_count=min_count_genes, expr_cutoff=expression_cutoff)
     st.filter_genes(adata,min_num_cells=min_num_cells, min_pct_cells=min_percent_cells, min_count=min_count_genes, expr_cutoff=expression_cutoff)
 
+    print("Writing " + output_filename_prefix + " " + args.output_filename_prefix + "_stream_result.pkl")
     st.write(adata,file_name=(output_filename_prefix + '_stream_result.pkl'),file_path='./',file_format='pkl') 
     print('Output: '+ str(adata.obs.shape[0]) + ' cells, ' + str(adata.var.shape[0]) + ' genes')
 
