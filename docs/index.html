@@ -46,15 +46,15 @@
 
 <p>STREAM (Single-cell Trajectories Reconstruction, Exploration And Mapping) is an interactive pipeline capable of disentangling and visualizing complex branching trajectories from both single-cell transcriptomic and epigenomic data.  Within GenePattern STREAM is implemented as a collection of modules that cover the entire STREAM processing pipeline to allow individual steps to be performed interactively for data exploration.</p>
 
-<p>STREAM.Preprocess is used to filter single-cell transcriptomic data and format it for analsysis using the STREAM piplene.</p>
+<p>STREAM.Preprocess is used to normalize and filter single-cell transcriptomic data and format it for analsysis using the STREAM piplene.</p>
 
-<p><h5>Huidong to add detail explaining this part of the STREAM pipeline</h5></p>
-
-<p>&nbsp;</p>
+<p>To prepare for processing in the follow-on STREAM modules, typically we will will first normalize the raw gene expression values based on library size. Then the gene expression values will be logarithmized. The mitochondrial genes will be removed.</p>
 
 <h2>Algorithm</h2>
 <p>
-<h5>Huidong to cover details of this portion of the analysis</h5>
+With this module, we can filter out cells based on several cell-centric metrics, including the minimum number of genes expressed, the minimum percentage of genes expressed, and the minimum number of read counts for one cell.
+</p><p>
+We can also filter out genes based on gene-centric metrics, including the minimum number of cells expressing one gene, the minimum percentage of cells expressing one gene, and the minimum number of read counts for one gene.
 </p>
 
 <h2>References</h2>
