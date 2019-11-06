@@ -10,7 +10,7 @@ commandLine=python /stream/preprocess_command_line.py -m <data.file> <cell.label
 
 
 cpuType=any
-description=Preprocess single cell RNA-seq data to prepare it for the STREAM trajectory analysis.
+description=Preprocess single cell RNA-seq data to prepare it for the STREAM trajectory analysis. This module will normalize, log transform, filter and remove mitochondiral genes.
 fileFormat=gz,tsv,mtx
 language=any
 minGenePatternVersion=3.9.13
@@ -95,7 +95,7 @@ p5_value=\=FALSE;--norm\=TRUE
 p6_MODE=
 p6_TYPE=CHOICE
 p6_default_value=
-p6_description=Log transform the dataset.
+p6_description=Log2 transform the dataset.
 p6_fileFormat=
 p6_flag=
 p6_name=log.transform
@@ -109,7 +109,7 @@ p6_value=\=FALSE;--log2\=TRUE
 p7_MODE=
 p7_TYPE=CHOICE
 p7_default_value=
-p7_description=Remove mitochondiral genes.
+p7_description=Remove mitochondrial genes.
 p7_fileFormat=
 p7_flag=
 p7_name=remove.mitochondrial.genes
