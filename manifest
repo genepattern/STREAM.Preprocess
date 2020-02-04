@@ -4,7 +4,7 @@
 JVMLevel=
 LSID=urn\:lsid\:broad.mit.edu\:cancer\.software\.genepattern\.module\.analysis\:00395\:99999
 author=Ted Liefeld, UCSD School of Medicine.
-categories=Single-Cell; RNA-Seq
+categories=Single-Cell
 
 commandLine=python /stream/preprocess_command_line.py -m <data.file> <cell.label.file> <cell.label.color.file> <output.filename> <min.percent.genes> <min.count.genes> <min.num.cells> <min.percent.cells> <min.count.cells> <expression.cutoff> <normalize> <log.transform> <remove.mitochondrial.genes>
 
